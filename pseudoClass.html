@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        input:focus {
+            background: yellow;
+        }
+        /*Selects every elements that is the first child of its parent*/
+        /* 伪类选择器  */
+        /* h1 的父元素的第一个子类 且是 h1 标记*/
+        h1:first-child {
+            color: red;
+        }
+        /*p:first-of-type {*/
+            /*color: blue;*/
+        /*}*/
+        /*Selects every elements that is the first type of its parent*/
+        /* p 的父元素的第一个子类 且是 p 标记*/
+        .test:first-of-type {
+            color: red;
+        }
+    </style>
+
+
+</head>
+<body>
+<input type="text">
+<div>
+    <h1>headline1...</h1>
+    <p>p1...</p>
+    <p class="test">p2...</p>
+    <p>p3...</p>
+</div>
+</body>
+</html>

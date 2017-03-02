@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS优先级：内联>内部=外部</title>
+    <!--外部样式-->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- 内部样式-->
+    <style>
+        h1 {
+            color: #0f0;
+        }
+    </style>
+</head>
+<body>
+<!--内联-->
+<h1 style="color: #00f;">hello1...</h1>
+<h1>hello2</h1>
+</body>
+</html>
